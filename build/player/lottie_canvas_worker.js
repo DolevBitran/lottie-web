@@ -8183,6 +8183,7 @@ SVGBaseElement.prototype = {
   },
   createRenderableComponents: function () {
     this.maskManager = new MaskElement(this.data, this, this.globalData);
+    if (Object.keys(this.effectsManager).length === 0) return;
     this.renderableEffectsManager = new SVGEffects(this);
   },
   setMatte: function (id) {

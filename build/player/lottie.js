@@ -6914,7 +6914,6 @@ SVGRenderer.prototype.destroy = function () {
   var len = this.layers ? this.layers.length : 0;
   for (i = 0; i < len; i += 1) {
     if (this.elements[i]) {
-      console.log({element : this.elements[i] })
       this.elements[i].destroy();
     }
   }
